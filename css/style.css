@@ -32,9 +32,7 @@ button, input[type="submit"] {
 }
 
 #bike-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
+  display: block;
 }
 
 .bike-list-item {
@@ -57,4 +55,18 @@ button, input[type="submit"] {
 
 #new-bike-form{
   text-align: center;
+}
+
+table{
+
+}
+th, td{
+  width:200px;
+  background-color: white;
+  border: 1px solid black;
+
+}
+table, th, td {
+
+
 }

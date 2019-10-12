@@ -10,6 +10,7 @@
 
 <h1 class = "main-heading">Bike Purchase Decision Maker</h1>
 <h3 class = "sub-heading">Enter the bikes you own</h3>
+
   <form id="new-bike-form">
     <div id="wrapper">
       <div class="bike-list-item">
@@ -20,8 +21,8 @@
           <option value="Road Bike">Road Bike</option>
           <option value="Downhill Bike">Downhill Bike</option>
           <option value="BMX">BMX</option>
-          <option value="Hybrid">hybrid Post</option>
-          <option value="Gravel Bike">gravel bike Post</option>
+          <option value="Hybrid">hybrid </option>
+          <option value="Gravel Bike">gravel bike</option>
         </select>
 
     </div>
@@ -32,7 +33,7 @@
         </div>
 
         <div class="bike-list-item">
-          <label for="model" class="data">Make</label>
+          <label for="model" class="data">Model</label>
           <input type="text" id="model" />
         </div>
 
@@ -41,10 +42,6 @@
           <input type="text" id="wheel" />
         </div>
 
-        <div class="bike-list-item">
-          <label for="value" class="data">Value £</label>
-          <input type="text" id="value" />
-        </div>
 
       </div>
       <input class= "button" type="submit" value="Save"/>
@@ -53,6 +50,13 @@
     <button class= "button" id="delete-all">Delete All</button>
 
     <h1>Bike Inventory</h1>
-    <div id="bike-list"></div>
+    <table id="bike-list">
+      <th>Type</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Wheel size</th>
+    </table>
+
+    <button class= "button" id="delete-all">Should I buy a new bike?</button>
   </body>
 </html>
