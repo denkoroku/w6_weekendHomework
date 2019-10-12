@@ -2,14 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const newBikeform = document.querySelector('#new-bike-form');
   newBikeform.addEventListener('submit', handleNewBikeFormSubmit);
 
-  const deleteAllButton = document.querySelector('#delete-all');
-  deleteAllButton.addEventListener('click', handleDeleteAllClick);
-
-  // const buyBikeButton = document.querySelector('#purchase');
-  // buyBikeButton.addEventListener('click', handleBuyBikeClick);
+  const buyBikeButton = document.querySelector('#purchase');
+  buyBikeButton.addEventListener('click', handleBuyBikeClick);
 })
 
 // filling in the form
+let bikeTotal = 0
 const handleNewBikeFormSubmit = function (event) {
   event.preventDefault();
 
@@ -40,25 +38,16 @@ const createBikeListItem = function (table) {
   wheel.textContent = table.wheel.value;
   bikeListItem.appendChild(wheel);
 
+  bikeTotal += 1;
   return bikeListItem;
 }
 
 
-// delete
-const handleDeleteAllClick = function (event) {
-  const clearBikeList = document.querySelector('#bike-list');
-  clearBikeList.innerHTML = '';
-}
-
-
 // bike message
-// const handleBuyBikeClick = function (event) {
-//   const clearBikeList = document.querySelector('#bike-list');
-//   clearBikeList.innerHTML = '';
-//
-//   const message = document.createElement('div');
-//   message.textContent = `The correct number of bikes is n+1 You have ${} bikes therefore the correct number of bikes for you is ${+1} you need to buy a new bike!`;
-//   message.appendChild(body);
-//
-//
-// }
+const handleBuyBikeClick = function (event) {
+  const message = document.createElement('h2');
+  message.textContent = `YES! The correct number of bikes is n+1 You have ${bikeTotal} bikes therefore the correct number of bikes for you is ${bikeTotal+1}. You need to buy a new bike!`;
+  messageHolder.appendChild(message);
+
+
+}

@@ -1,5 +1,5 @@
 body {
-
+  font-family: 'Comfortaa', cursive;
  background-repeat: no-repeat;
  background-image: url('../images/bike.jpg');
 
@@ -51,6 +51,7 @@ button, input[type="submit"] {
  font-size: 0.8rem;
  padding 20px;
  border-radius: 10px;
+ z-index:-1;
 }
 
 #new-bike-form{
@@ -66,7 +67,20 @@ th, td{
   border: 1px solid black;
 
 }
-table, th, td {
 
+#purchase{
+  margin-top:50px;
+  width:50%;
+  display:inline-block;
+}
 
+#messageHolder{
+  display:inline-block;
+  float:right;
+  margin-left: 50px;
+  width:40%;
+  background-color: tomato;
+  color: white;
+  font-size:1rem;
+  z-index: 2;
 }
