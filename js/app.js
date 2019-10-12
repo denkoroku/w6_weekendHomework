@@ -33,11 +33,9 @@ const createBikeListItem = function (form) {
   model.textContent = form.model.value;
   bikeListItem.appendChild(model);
 
-  // const wheelSize = document.createElement('h2');
-  // wheelSize.textContent = form.wheelSize.value;
-  // bikeListItem.appendChild(wheelSize);
-
-
+  const wheel = document.createElement('h2');
+  wheel.textContent = form.wheel.value;
+  bikeListItem.appendChild(wheel);
 
   return bikeListItem;
 }
