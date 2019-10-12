@@ -56,6 +56,6 @@ const handleBuyBikeClick = function (event) {
 
 // Delete all
 const handleDeleteAllClick = function (event) {
-  const bikeList = document.querySelector('#bike-list');
+  const bikeList = document.querySelector('#bike-list td');
   bikeList.innerHTML = '';
 }
