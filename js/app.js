@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const buyBikeButton = document.querySelector('#purchase');
   buyBikeButton.addEventListener('click', handleBuyBikeClick);
+
+  const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
 // filling in the form
@@ -48,6 +51,11 @@ const handleBuyBikeClick = function (event) {
   const message = document.createElement('h2');
   message.textContent = `YES! The correct number of bikes is n+1 You have ${bikeTotal} bikes therefore the correct number of bikes for you is ${bikeTotal+1}. You need to buy a new bike!`;
   messageHolder.appendChild(message);
+}
 
 
+// Delete all
+const handleDeleteAllClick = function (event) {
+  const bikeList = document.querySelector('#bike-list');
+  bikeList.innerHTML = '';
 }
