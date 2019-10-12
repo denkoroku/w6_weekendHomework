@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 let bikeTotal = 0
 const handleNewBikeFormSubmit = function (event) {
   event.preventDefault();
-
   const bikeListItem = createBikeListItem(event.target);
   const bikeList = document.querySelector('#bike-list');
   bikeList.appendChild(bikeListItem);
@@ -54,8 +53,8 @@ const handleBuyBikeClick = function (event) {
 }
 
 
-// Delete all
+// Delete all 
 const handleDeleteAllClick = function (event) {
-  const bikeList = document.querySelector('#bike-list td');
+  const bikeList = document.querySelector('#bike-list');
   bikeList.innerHTML = '';
 }

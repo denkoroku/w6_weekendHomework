@@ -1,7 +1,7 @@
 body {
   font-family: 'Comfortaa', cursive;
- background-repeat: no-repeat;
- background-image: url('../images/bike.jpg');
+  background-repeat: no-repeat;
+  background-image: url('../images/bike.jpg');
 
 }
 .main-heading{
@@ -20,6 +20,8 @@ body {
 
 .form-item {
   margin-right: 1.8rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
 }
 
 
@@ -36,22 +38,31 @@ button, input[type="submit"] {
 }
 
 .bike-list-item {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid #darkgrey;
   border-radius: 5%;
-  background: #lightblue;
+}
+
+#category{
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #darkgrey;
+  border-radius: 5%;
 }
 
 .button{
-
   height:50px;
   width:100px;
- font-family: sans-serif;
- font-size: 0.8rem;
- padding 20px;
- border-radius: 10px;
- z-index:-1;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1rem;
+  padding 20px;
+  border-radius: 10px;
+  z-index:-1;
 }
 
 #new-bike-form{

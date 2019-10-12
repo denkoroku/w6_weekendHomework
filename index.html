@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bike List App</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-    <script src="js/app.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Bike List App</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <script src="js/app.js"></script>
+</head>
+<body>
 
-<h1 class = "main-heading">Bike Purchase Decision Maker</h1>
-<h3 class = "sub-heading">Enter the bikes you own</h3>
+  <h1 class = "main-heading">Bike Purchase Decision Maker</h1>
+  <h3 class = "sub-heading">Enter the bikes you own</h3>
 
   <form id="new-bike-form">
     <div id="wrapper">
@@ -26,39 +26,39 @@
           <option value="Gravel Bike">gravel bike</option>
         </select>
 
-    </div>
-
-        <div class="bike-list-item">
-          <label for="make" class="data">Make</label>
-          <input type="text" id="make" />
-        </div>
-
-        <div class="bike-list-item">
-          <label for="model" class="data">Model</label>
-          <input type="text" id="model" />
-        </div>
-
-        <div class="bike-list-item">
-          <label for="wheel" class="data">Wheel size</label>
-          <input type="text" id="wheel" />
-        </div>
-
-
       </div>
-      <input class= "button" type="submit" value="Save"/>
-    </form>
-    <button class = "button" id="delete-all">Delete All</button>
 
-    <h1>Bike Inventory</h1>
-    <table id="bike-list">
-      <th>Type</th>
-      <th>Make</th>
-      <th>Model</th>
-      <th>Wheel size</th>
-    </table>
+      <div class="bike-list-item">
+        <label for="make" class="data">Make</label>
+        <input type="text" id="make" />
+      </div>
 
-    <button class= "button" id="purchase">Should I buy a new bike?</button>
+      <div class="bike-list-item">
+        <label for="model" class="data">Model</label>
+        <input type="text" id="model" />
+      </div>
 
-    <div id= "messageHolder"></div>
-  </body>
+      <div class="bike-list-item">
+        <label for="wheel" class="data">Wheel size</label>
+        <input type="text" id="wheel" />
+      </div>
+
+
+    </div>
+    <input class= "button" type="submit" value="Save"/>
+  </form>
+  <button class = "button" id="delete-all">Delete All</button>
+
+  <h1>Bike Inventory</h1>
+  <table id="bike-list">
+    <th>Type</th>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Wheel size</th>
+  </table>
+
+  <button class= "button" id="purchase">Should I buy a new bike?</button>
+
+  <div id= "messageHolder"></div>
+</body>
 </html>
