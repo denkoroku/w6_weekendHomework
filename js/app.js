@@ -53,8 +53,11 @@ const handleBuyBikeClick = function (event) {
 }
 
 
-// Delete all 
+// Delete all
 const handleDeleteAllClick = function (event) {
-  const bikeList = document.querySelector('#bike-list');
-  bikeList.innerHTML = '';
+  const bikeList = document.getElementsByTagName('td');
+    for (bike of bikeList){
+      bike.innerHTML = '';
+    }
+    bikeTotal=0;
 }
